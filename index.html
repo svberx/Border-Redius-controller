@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Border Radius Generator</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="box">
+            <div class="screen">
+                <div class="shape"></div>
+            </div>
+                <div class="screen-code">
+                    <span class="code">Border-radius: &nbsp;<span 
+                        class="code-value"> <span class="value top-val">25</span>px <span class="value right-val">25</span>px <span class="value bottom-val">25</span>px <span class="value left-val">25</span>px </span> 
+                    </span>
+                </div>
+        
+            <div class="rangec">
+            <div class="all-range">
+                <label for="">Change all</label>
+                <input onchange="changeAll()" class="all-input" min="0" step="1" max="50" value="0"  type="range">
+            </div>
+            <br>
+            <div class="top-side">
+                <label for="">Top</label>
+                <input onchange="changeTop()" class="range top" min="0" step="1" max="50" value="0"  type="range">
+                <label for="">Bottom</label>
+                <input onchange="changeBottom()" class="range bottom" min="0" step="1" max="50" value="0"  type="range">
+            </div>
+            <div class="bottom-side">
+                <label for="">Right</label>
+                <input onchange="changeRight()" class="range right" min="0" step="1" max="50" value="0"  type="range">
+                <label class="leftc test" for="">Left</label>
+                <input onchange="changeLeft()" class="range leftc left" min="0" step="1" max="50" value="0"  type="range">
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
